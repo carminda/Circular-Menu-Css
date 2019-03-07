@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<div class="flexRow animated delay350 radial-component" [class.minimizeRadial]="isMinimized" fxLayoutAlign="center" #content>
+  <ul class="radial-container">
+    <li *ngFor="let status of list$ | async; let i = index"
+        (click)='setInterchangeableMinMaxClass(i)'>
+      <div class="radial-slice">
+        <div *ngIf="!isMinimized" class="text-wrapper">
+          <span>{{ status.id }}</span>
+        </div>
+        <div *ngIf="isMinimized && status.selected" class="text-wrapper">
+          <span [class.radial-slice-title]="isMinimized && status.selected">{{ status.id }}</span>
+          <span>{{ status.info }}</span>
+        </div>
+        <img *ngIf="isMinimized && status.selected" mat-card-image src="{{ status.image }}" />
+      </div>
+    </li>
+  </ul>
+</div>
