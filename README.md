@@ -1,6 +1,6 @@
 # CircularMenu
 
-This is an Angular 7 project containing a very simple circular menu containing 6 options. 
+This is an Angular 7 project containing a very simple circular menu with 6 options. 
 If you click on one of the options it will display the corresponding info + image. 
 To go back to the circular menu you just need to click on any part of the maximized info section.  
 
