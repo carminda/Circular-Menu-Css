@@ -4,6 +4,8 @@ This is an Angular 7 project containing a very simple circular menu with 6 optio
 If you click on one of the options it will display the corresponding info + image. 
 To go back to the circular menu you just need to click on any part of the maximized info section.  
 
+Is only supported for Chrome, Firefox and Microsoft Edge.
+
 Implementation based on https://tympanus.net/codrops/2013/08/09/building-a-circular-navigation-with-css-transforms/
 
 URL demo: https://carminda.github.io/Circular-Menu-Css/
